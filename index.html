@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apia Via CEP</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Procure seu <span>CEP</span></h1>
+      <nav class="navbar bg-body-tertiary d-flex m-0 p-0">
+        <div class="container-fluid d-flex justify-content-center">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="buscar-cep-inp"
+            />
+            <button class="btn btn-outline-success" id="buscar-cep-btn">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div class="card">
+        <ul class="list-group list-group-flush d-flex">
+          <li class="list-group-item" id="cidade"></li>
+          <li class="list-group-item" id="bairro"></li>
+          <li class="list-group-item" id="rua"></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/script/index.js"></script>
+  </body>
+</html>
